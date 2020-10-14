@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StargazersViewController.swift
 //  GH Stargazers
 //
 //  Created by Emanuel Carnevale on 11/10/2020.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class StargazersViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     @IBOutlet var loaderView: UIActivityIndicatorView!
     @IBOutlet var paginationLoaderView: UIActivityIndicatorView!
@@ -58,7 +58,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: StargazerViewModelDelegate {
+extension StargazersViewController: StargazerViewModelDelegate {
     func onCompletion() {
         stopLoading()
         tableView.reloadData()
@@ -80,7 +80,7 @@ extension ViewController: StargazerViewModelDelegate {
     }
 }
 
-extension ViewController: UITableViewDataSource {
+extension StargazersViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -91,7 +91,7 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ViewController.stargazerCellId, for: indexPath) as! StargazerTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: StargazersViewController.stargazerCellId, for: indexPath) as! StargazerTableViewCell
         cell.setup(with: stargazerViewModel.stargazers[indexPath.row])
         
         if (indexPath.row == stargazerViewModel.stargazers.count - 1) {

@@ -127,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="-1036.231884057971" y="97.767857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Stargazers View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="StargazersListVC" id="BYZ-38-t0r" customClass="ViewController" customModule="GH_Stargazers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StargazersListVC" id="BYZ-38-t0r" customClass="StargazersViewController" customModule="GH_Stargazers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

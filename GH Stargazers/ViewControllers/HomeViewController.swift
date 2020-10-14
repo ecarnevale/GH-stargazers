@@ -53,7 +53,7 @@ class HomeViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == loadStargazersSegueIdentifier {
-            if let vc = segue.destination as? ViewController, let ownerName = ownerNameTextField.text, let repoName = repositoryNameTextField.text {
+            if let vc = segue.destination as? StargazersViewController, let ownerName = ownerNameTextField.text, let repoName = repositoryNameTextField.text {
                 vc.repository = "\(ownerName)/\(repoName)"
             }
         }
