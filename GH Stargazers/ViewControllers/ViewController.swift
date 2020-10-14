@@ -16,22 +16,23 @@ class ViewController: UIViewController {
     private let stargazerViewModel = StargazerViewModel()
     private let refreshControl = UIRefreshControl()
     
-    private var repo = "octocat/hello-world"
+    var repository = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.navigationController?.navigationBar.topItem?.title = repo
         stargazerViewModel.delegate = self
         
         tableView.dataSource = self
         tableView.refreshControl = refreshControl
         refreshControl.addTarget(self, action: #selector(refreshList), for: .valueChanged)
         
-        loadingData(for: repo)
+        loadingData(for: repository)
         loadingMoreElements(false)
     }
 
     @objc func refreshList() {
-        stargazerViewModel.fetchStargazers(for: "Alamofire/Alamofire")
+        stargazerViewModel.fetchStargazers(for: repository)
     }
     
     private func loadingData(for searchString: String) {
@@ -45,6 +46,10 @@ class ViewController: UIViewController {
         loaderView.isHidden = true
         tableView.isHidden = false
         loaderView.stopAnimating()
+        
+        if refreshControl.isRefreshing {
+            refreshControl.endRefreshing()
+        }
     }
     
     private func loadingMoreElements(_ isLoading: Bool) {
@@ -54,18 +59,20 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: StargazerViewModelDelegate {
-    func onCompletion(stargazers: [Stargazer]) {
+    func onCompletion() {
         stopLoading()
         tableView.reloadData()
-        
-        if refreshControl.isRefreshing {
-            refreshControl.endRefreshing()
-        }
     }
     
     func onError(errorMessage: String) {
-        //TODO
-
+        stopLoading()
+        let action = UIAlertAction(title: "Ok", style: .default, handler: { _ in
+            self.dismiss(animated: true, completion: nil)
+            self.navigationController?.popViewController(animated: true)
+        })
+        let alertController = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .alert)
+        alertController.addAction(action)
+        self.present(alertController, animated: true, completion: nil)
     }
     
     func isLoadingMore(_ bool: Bool) {
@@ -88,7 +95,7 @@ extension ViewController: UITableViewDataSource {
         cell.setup(with: stargazerViewModel.stargazers[indexPath.row])
         
         if (indexPath.row == stargazerViewModel.stargazers.count - 1) {
-            stargazerViewModel.fetchStargazers(for: repo)
+            stargazerViewModel.fetchStargazers(for: repository)
         }
         return cell
     }

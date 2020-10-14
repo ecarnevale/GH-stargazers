@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 protocol StargazerViewModelDelegate: class {
-    func onCompletion(stargazers: [Stargazer])
+    func onCompletion()
     func onError(errorMessage: String)
     func isLoadingMore(_ bool: Bool)
 }
@@ -18,6 +18,7 @@ final class StargazerViewModel {
     weak var delegate: StargazerViewModelDelegate?
     
     private let genericErrorMessage = "Errore!"
+    private let emptyArrayMessage = "Errore vuoto"
     var stargazers: [Stargazer] = []
     
     static let elementsPerPage = 100
@@ -38,18 +39,27 @@ final class StargazerViewModel {
             switch(response.result) {
             case .success:
                 let decoder = JSONDecoder()
-                let stargazers = try? decoder.decode([Stargazer].self, from: response.data!)
-                if let stargazers = stargazers {
+                if let data = response.data {
+                    do {
+                        let stargazers = try decoder.decode([Stargazer].self, from: data)
+                        
+                        self.currentPage += 1
+                        self.isFetchInProgress = false
+                        self.stargazers.append(contentsOf: stargazers)
                     
-                    self.currentPage += 1
-                    self.isFetchInProgress = false
-                    self.stargazers.append(contentsOf: stargazers)
-                    delegate?.onCompletion(stargazers: stargazers)
-                } else {
-                    if currentPage > 1 {
-                        self.delegate?.isLoadingMore(false)
-                    } else {
-                        delegate?.onError(errorMessage: genericErrorMessage)
+                        if stargazers.isEmpty {
+                            if currentPage > 1 {
+                                self.delegate?.isLoadingMore(false)
+                            } else {
+                                delegate?.onError(errorMessage: emptyArrayMessage)
+                            }
+                        } else {
+                            delegate?.onCompletion()
+                        }
+                    }
+                    catch {
+                        let error = try? decoder.decode(RequestError.self, from: data)
+                        delegate?.onError(errorMessage: error?.message ?? genericErrorMessage)
                     }
                 }
             case .failure:
