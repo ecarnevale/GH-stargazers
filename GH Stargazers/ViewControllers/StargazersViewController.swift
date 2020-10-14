@@ -20,7 +20,8 @@ class StargazersViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.navigationController?.navigationBar.topItem?.title = repo
+        
+        self.title = repository
         stargazerViewModel.delegate = self
         
         tableView.dataSource = self

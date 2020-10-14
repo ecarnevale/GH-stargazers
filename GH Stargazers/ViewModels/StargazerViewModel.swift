@@ -21,7 +21,7 @@ final class StargazerViewModel {
     private let emptyArrayMessage = "Errore vuoto"
     var stargazers: [Stargazer] = []
     
-    static let elementsPerPage = 100
+    static let elementsPerPage = 10
     private var currentPage = 1
     private var isFetchInProgress = false
     
@@ -34,7 +34,9 @@ final class StargazerViewModel {
             self.delegate?.isLoadingMore(true)
         }
         
-        AF.request("https://api.github.com/repos/\(repository)/stargazers?per_page=\(StargazerViewModel.elementsPerPage)&page=\(currentPage)").responseJSON { [self] response in
+        let headers: HTTPHeaders = ["Accept": "application/vnd.github.v3+json"]
+        
+        AF.request("https://api.github.com/repos/\(repository)/stargazers?per_page=\(StargazerViewModel.elementsPerPage)&page=\(currentPage)", headers: headers).responseJSON { [self] response in
             
             switch(response.result) {
             case .success:

@@ -25,6 +25,7 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "GH Stargazers"
         
         keyboardWillShowObserver = NotificationCenter.default.addObserver(
             self,
@@ -37,6 +38,7 @@ class HomeViewController: UIViewController {
             selector: #selector(HomeViewController.keyboardWillHide(notification:)),
             name: UIResponder.keyboardWillHideNotification,
             object: nil)
+        setupDismissKeyboardGestureRecognizer()
         
         ownerNameTextField.delegate = self
         repositoryNameTextField.delegate = self
@@ -65,34 +67,26 @@ extension HomeViewController {
         if let keyboardRect = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             if !self.isKeyboardOpen {
                 self.isKeyboardOpen = true
-                self.keyboardWillShow(keyboardRect: keyboardRect)
+                
+                let contentInsets = UIEdgeInsets(top: 0, left: 0, bottom: keyboardRect.height, right: 0)
+                scrollView.contentInset = contentInsets
+                scrollView.scrollIndicatorInsets = contentInsets
+                
+                scrollView.scrollRectToVisible(loadStargazersButton.frame, animated: true)
             }
         }
     }
     
     @objc private func keyboardWillHide(notification: Notification) {
-        if let keyboardRect = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+        if let _ = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             if self.isKeyboardOpen {
                 self.isKeyboardOpen = false
-                self.keyboardWillHide(keyboardRect: keyboardRect)
+                
+                let contentInsets = UIEdgeInsets.zero
+                scrollView.contentInset = contentInsets
+                scrollView.scrollIndicatorInsets = contentInsets
             }
         }
-    }
-    
-    // MARK: - Keyboard Methods
-    
-    func keyboardWillShow(keyboardRect: CGRect) {
-        let contentInsets = UIEdgeInsets(top: 0, left: 0, bottom: keyboardRect.height, right: 0)
-        scrollView.contentInset = contentInsets
-        scrollView.scrollIndicatorInsets = contentInsets
-        
-        scrollView.scrollRectToVisible(loadStargazersButton.frame, animated: true)
-    }
-    
-    func keyboardWillHide(keyboardRect: CGRect) {
-        let contentInsets = UIEdgeInsets.zero
-        scrollView.contentInset = contentInsets
-        scrollView.scrollIndicatorInsets = contentInsets
     }
 }
 
@@ -107,5 +101,17 @@ extension HomeViewController: UITextFieldDelegate {
             }
         }
         return false
+    }
+}
+
+extension HomeViewController {
+    func setupDismissKeyboardGestureRecognizer() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboardTouchOutside))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc private func dismissKeyboardTouchOutside() {
+        view.endEditing(true)
     }
 }
