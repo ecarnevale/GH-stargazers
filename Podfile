@@ -7,6 +7,7 @@ target 'GH Stargazers' do
 
   # Pods for GH Stargazers
   pod 'Alamofire', '~> 5.2'
+  pod 'SDWebImage', '~> 5.0'
 
   target 'GH StargazersTests' do
     inherit! :search_paths
