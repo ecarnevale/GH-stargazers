@@ -1,0 +1,42 @@
+[
+{
+  "login": "allanmaio",
+  "id": 345807,
+  "node_id": "MDQ6VXNlcjM0NTgwNw==",
+  "avatar_url": "https://avatars3.githubusercontent.com/u/345807?v=4",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/allanmaio",
+  "html_url": "https://github.com/allanmaio",
+  "followers_url": "https://api.github.com/users/allanmaio/followers",
+  "following_url": "https://api.github.com/users/allanmaio/following{/other_user}",
+  "gists_url": "https://api.github.com/users/allanmaio/gists{/gist_id}",
+  "starred_url": "https://api.github.com/users/allanmaio/starred{/owner}{/repo}",
+  "subscriptions_url": "https://api.github.com/users/allanmaio/subscriptions",
+  "organizations_url": "https://api.github.com/users/allanmaio/orgs",
+  "repos_url": "https://api.github.com/users/allanmaio/repos",
+  "events_url": "https://api.github.com/users/allanmaio/events{/privacy}",
+  "received_events_url": "https://api.github.com/users/allanmaio/received_events",
+  "type": "User",
+  "site_admin": false
+},
+{
+  "login": "kapare",
+  "id": 349579,
+  "node_id": "MDQ6VXNlcjM0OTU3OQ==",
+  "avatar_url": "https://avatars1.githubusercontent.com/u/349579?v=4",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/kapare",
+  "html_url": "https://github.com/kapare",
+  "followers_url": "https://api.github.com/users/kapare/followers",
+  "following_url": "https://api.github.com/users/kapare/following{/other_user}",
+  "gists_url": "https://api.github.com/users/kapare/gists{/gist_id}",
+  "starred_url": "https://api.github.com/users/kapare/starred{/owner}{/repo}",
+  "subscriptions_url": "https://api.github.com/users/kapare/subscriptions",
+  "organizations_url": "https://api.github.com/users/kapare/orgs",
+  "repos_url": "https://api.github.com/users/kapare/repos",
+  "events_url": "https://api.github.com/users/kapare/events{/privacy}",
+  "received_events_url": "https://api.github.com/users/kapare/received_events",
+  "type": "User",
+  "site_admin": false
+}
+]

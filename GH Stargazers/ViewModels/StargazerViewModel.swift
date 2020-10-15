@@ -17,6 +17,8 @@ protocol StargazerViewModelDelegate: class {
 final class StargazerViewModel {
     weak var delegate: StargazerViewModelDelegate?
     
+    private let session: Session!
+    
     private let genericErrorMessage = "Errore!"
     private let emptyArrayMessage = "Errore vuoto"
     var stargazers: [Stargazer] = []
@@ -24,6 +26,10 @@ final class StargazerViewModel {
     static let elementsPerPage = 10
     private var currentPage = 1
     private var isFetchInProgress = false
+    
+    init(configuration: URLSessionConfiguration = URLSessionConfiguration.af.default) {
+        self.session = Session(configuration: configuration)
+    }
     
     func fetchStargazers(for repository: String) {
         guard !isFetchInProgress else {
@@ -36,7 +42,7 @@ final class StargazerViewModel {
         
         let headers: HTTPHeaders = ["Accept": "application/vnd.github.v3+json"]
         
-        AF.request("https://api.github.com/repos/\(repository)/stargazers?per_page=\(StargazerViewModel.elementsPerPage)&page=\(currentPage)", headers: headers).responseJSON { [self] response in
+        session.request("https://api.github.com/repos/\(repository)/stargazers?per_page=\(StargazerViewModel.elementsPerPage)&page=\(currentPage)", headers: headers).responseJSON { [self] response in
             
             switch(response.result) {
             case .success:
@@ -45,10 +51,9 @@ final class StargazerViewModel {
                     do {
                         let stargazers = try decoder.decode([Stargazer].self, from: data)
                         
-                        self.currentPage += 1
                         self.isFetchInProgress = false
                         self.stargazers.append(contentsOf: stargazers)
-                    
+                        
                         if stargazers.isEmpty {
                             if currentPage > 1 {
                                 self.delegate?.isLoadingMore(false)
@@ -58,6 +63,7 @@ final class StargazerViewModel {
                         } else {
                             delegate?.onCompletion()
                         }
+                        self.currentPage += 1
                     }
                     catch {
                         let error = try? decoder.decode(RequestError.self, from: data)

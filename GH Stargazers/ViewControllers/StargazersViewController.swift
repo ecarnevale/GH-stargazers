@@ -14,7 +14,6 @@ class StargazersViewController: UIViewController {
     static let stargazerCellId = "__stargazer_cell_identifier__"
     
     private let stargazerViewModel = StargazerViewModel()
-    private let refreshControl = UIRefreshControl()
     
     var repository = ""
 
@@ -25,17 +24,11 @@ class StargazersViewController: UIViewController {
         stargazerViewModel.delegate = self
         
         tableView.dataSource = self
-        tableView.refreshControl = refreshControl
-        refreshControl.addTarget(self, action: #selector(refreshList), for: .valueChanged)
         
         loadingData(for: repository)
         loadingMoreElements(false)
     }
 
-    @objc func refreshList() {
-        stargazerViewModel.fetchStargazers(for: repository)
-    }
-    
     private func loadingData(for searchString: String) {
         loaderView.isHidden = false
         tableView.isHidden = true
@@ -47,10 +40,6 @@ class StargazersViewController: UIViewController {
         loaderView.isHidden = true
         tableView.isHidden = false
         loaderView.stopAnimating()
-        
-        if refreshControl.isRefreshing {
-            refreshControl.endRefreshing()
-        }
     }
     
     private func loadingMoreElements(_ isLoading: Bool) {

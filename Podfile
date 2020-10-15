@@ -12,6 +12,8 @@ target 'GH Stargazers' do
   target 'GH StargazersTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Mocker'
+    pod 'Alamofire', '~> 5.2'
   end
 
   target 'GH StargazersUITests' do
