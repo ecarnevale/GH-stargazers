@@ -13,6 +13,7 @@ public final class MockedData {
     public static let emptyData: URL = Bundle(for: MockedData.self).url(forResource: "Resources/emptyData", withExtension: "json")!
     public static let notFoundRepo: URL = Bundle(for: MockedData.self).url(forResource: "Resources/notFoundRepo", withExtension: "json")!
     public static let correctData: URL = Bundle(for: MockedData.self).url(forResource: "Resources/correctData", withExtension: "json")!
+    public static let incorrectData: URL = Bundle(for: MockedData.self).url(forResource: "Resources/incorrectData", withExtension: "json")!
     public static let paginationData: URL = Bundle(for: MockedData.self).url(forResource: "Resources/paginationData", withExtension: "json")!
     public static let paginationData2: URL = Bundle(for: MockedData.self).url(forResource: "Resources/paginationData2", withExtension: "json")!
 }

@@ -83,6 +83,36 @@ class GH_StargazersViewModelTests: XCTestCase {
         waitForExpectations(timeout: 10)
     }
     
+    func testIncorrectData() throws {
+        
+        let expectation = self.expectation(description: "Request should succeed throw error when there is a parsing error")
+        let originalURL = URL(string: "https://api.github.com/repos/octocat/hello-world/stargazers")!
+        
+        Mock(url: originalURL, ignoreQuery: true, dataType: .json, statusCode: 200, data: [
+            .get: MockedData.incorrectData.data
+        ]).register()
+        
+        let vm = StargazerViewModel(configuration: configuration)
+        
+        let delegate = StargazersVMDelegate(viewModel: vm,
+                                            expectation: expectation,
+                                            onCompletionBlock: {
+                                                XCTFail("Request should not call onCompletionBlock")
+                                            },
+                                            onErrorBlock: { errorMessage in
+                                                XCTAssertEqual(errorMessage, "Errore!")
+                                                expectation.fulfill()
+                                            },
+                                            isLoadingMoreBlock: { isLoading in
+                                                XCTFail("Request should not call isLoadingMoreBlock")
+                                            })
+        
+        vm.delegate = delegate
+        
+        vm.fetchStargazers(for: "octocat/hello-world")
+        waitForExpectations(timeout: 5)
+    }
+    
     func testCorrectData() throws {
         
         let expectation = self.expectation(description: "Request should succeed returning stargazers")
