@@ -20,7 +20,7 @@ final class StargazerViewModel {
     private let session: Session!
     
     private let genericErrorMessage = "Errore!"
-    private let emptyArrayMessage = "Errore vuoto"
+    private let emptyArrayMessage = "Non sono stati trovati stargazers"
     var stargazers: [Stargazer] = []
     
     static let elementsPerPage = 10
@@ -41,8 +41,9 @@ final class StargazerViewModel {
         }
         
         let headers: HTTPHeaders = ["Accept": "application/vnd.github.v3+json"]
+        let requestURL = "https://api.github.com/repos/\(repository)/stargazers?per_page=\(StargazerViewModel.elementsPerPage)&page=\(currentPage)"
         
-        session.request("https://api.github.com/repos/\(repository)/stargazers?per_page=\(StargazerViewModel.elementsPerPage)&page=\(currentPage)", headers: headers).responseJSON { [self] response in
+        session.request(requestURL, headers: headers).responseJSON { [self] response in
             
             switch(response.result) {
             case .success:
@@ -53,9 +54,10 @@ final class StargazerViewModel {
                         
                         self.isFetchInProgress = false
                         self.stargazers.append(contentsOf: stargazers)
+                        self.currentPage += 1
                         
                         if stargazers.isEmpty {
-                            if currentPage > 1 {
+                            if currentPage > 2 {
                                 self.delegate?.isLoadingMore(false)
                             } else {
                                 delegate?.onError(errorMessage: emptyArrayMessage)
@@ -63,7 +65,6 @@ final class StargazerViewModel {
                         } else {
                             delegate?.onCompletion()
                         }
-                        self.currentPage += 1
                     }
                     catch {
                         let error = try? decoder.decode(RequestError.self, from: data)

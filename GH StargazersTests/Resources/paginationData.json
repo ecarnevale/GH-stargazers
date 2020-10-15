@@ -1,6 +1,6 @@
 [
 {
-  "login": "correct1",
+  "login": "pagination1",
   "id": 345807,
   "node_id": "MDQ6VXNlcjM0NTgwNw==",
   "avatar_url": "https://avatars3.githubusercontent.com/u/345807?v=4",
@@ -20,7 +20,7 @@
   "site_admin": false
 },
 {
-  "login": "correct2",
+  "login": "pagination2",
   "id": 349579,
   "node_id": "MDQ6VXNlcjM0OTU3OQ==",
   "avatar_url": "https://avatars1.githubusercontent.com/u/349579?v=4",

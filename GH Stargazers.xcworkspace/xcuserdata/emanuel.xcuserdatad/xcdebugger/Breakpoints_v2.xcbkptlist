@@ -40,142 +40,46 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "85C14AB4-506E-4E52-AB1A-DB89E0327D42"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GH Stargazers/ViewModels/StargazerViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "fetchStargazers(for:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "85C14AB4-506E-4E52-AB1A-DB89E0327D42 - cca9e96cdbbf9204"
+                  uuid = "85C14AB4-506E-4E52-AB1A-DB89E0327D42 - fdb2e8fe6783f1c5"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_Stargazers.StargazerViewModel.fetchStargazers(for: Swift.String) -&gt; ()"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_Stargazers.StargazerViewModel.fetchStargazers(for: Swift.String, debugString: Swift.String) -&gt; ()"
                   moduleName = "GH Stargazers"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "74"
-                  endingLineNumber = "74"
-                  offsetFromSymbolStart = "2414">
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "4300">
                </Location>
                <Location
-                  uuid = "85C14AB4-506E-4E52-AB1A-DB89E0327D42 - e5aca248fb32336c"
+                  uuid = "85C14AB4-506E-4E52-AB1A-DB89E0327D42 - 8687faf628b85dbd"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_StargazersTests.StargazerViewModel.fetchStargazers(for: Swift.String) -&gt; ()"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_StargazersTests.StargazerViewModel.fetchStargazers(for: Swift.String, debugString: Swift.String) -&gt; ()"
                   moduleName = "GH StargazersTests"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "74"
-                  endingLineNumber = "74"
-                  offsetFromSymbolStart = "2414">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0E06EA93-DCCE-4300-BCAE-D4486CF98908"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GH Stargazers/ViewModels/StargazerViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "fetchStargazers(for:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0E06EA93-DCCE-4300-BCAE-D4486CF98908 - cca9e96cdbbf977e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_Stargazers.StargazerViewModel.fetchStargazers(for: Swift.String) -&gt; ()"
-                  moduleName = "GH Stargazers"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "698">
-               </Location>
-               <Location
-                  uuid = "0E06EA93-DCCE-4300-BCAE-D4486CF98908 - e5aca248fb323616"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_StargazersTests.StargazerViewModel.fetchStargazers(for: Swift.String) -&gt; ()"
-                  moduleName = "GH StargazersTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "698">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6F14C01C-4A4F-43F1-9856-0B4ADEA74F23"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GH Stargazers/ViewModels/StargazerViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "fetchStargazers(for:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "6F14C01C-4A4F-43F1-9856-0B4ADEA74F23 - cca9e96cdbbf973c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_Stargazers.StargazerViewModel.fetchStargazers(for: Swift.String) -&gt; ()"
-                  moduleName = "GH Stargazers"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "532">
-               </Location>
-               <Location
-                  uuid = "6F14C01C-4A4F-43F1-9856-0B4ADEA74F23 - e5aca248fb323654"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_StargazersTests.StargazerViewModel.fetchStargazers(for: Swift.String) -&gt; ()"
-                  moduleName = "GH StargazersTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "532">
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "4300">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -184,211 +88,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "EB93146E-7AE3-4BB5-ABC6-9C7AA70F51ED"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GH Stargazers/ViewModels/StargazerViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "fetchStargazers(for:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "EB93146E-7AE3-4BB5-ABC6-9C7AA70F51ED - cca9e96cdbbf95a1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_Stargazers.StargazerViewModel.fetchStargazers(for: Swift.String) -&gt; ()"
-                  moduleName = "GH Stargazers"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "69"
-                  endingLineNumber = "69"
-                  offsetFromSymbolStart = "3211">
-               </Location>
-               <Location
-                  uuid = "EB93146E-7AE3-4BB5-ABC6-9C7AA70F51ED - e5aca248fb3234c9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_StargazersTests.StargazerViewModel.fetchStargazers(for: Swift.String) -&gt; ()"
-                  moduleName = "GH StargazersTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "69"
-                  endingLineNumber = "69"
-                  offsetFromSymbolStart = "3211">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "52893862-87EC-4260-9126-748D166E8AC6"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GH Stargazers/ViewModels/StargazerViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "fetchStargazers(for:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "52893862-87EC-4260-9126-748D166E8AC6 - cca9e96cdbbf9434"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_Stargazers.StargazerViewModel.fetchStargazers(for: Swift.String) -&gt; ()"
-                  moduleName = "GH Stargazers"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "58"
-                  endingLineNumber = "58"
-                  offsetFromSymbolStart = "1165">
-               </Location>
-               <Location
-                  uuid = "52893862-87EC-4260-9126-748D166E8AC6 - e5aca248fb32355c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_StargazersTests.StargazerViewModel.fetchStargazers(for: Swift.String) -&gt; ()"
-                  moduleName = "GH StargazersTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "58"
-                  endingLineNumber = "58"
-                  offsetFromSymbolStart = "1165">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EF252D63-13B8-4A62-AE8E-F7F353225E52"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GH Stargazers/ViewModels/StargazerViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "fetchStargazers(for:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "EF252D63-13B8-4A62-AE8E-F7F353225E52 - 2c3f5d370f90c45a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GH_Stargazers.StargazerViewModel.fetchStargazers(for: Swift.String) -&gt; ()"
-                  moduleName = "GH Stargazers"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "807">
-               </Location>
-               <Location
-                  uuid = "EF252D63-13B8-4A62-AE8E-F7F353225E52 - 2c3f5d370f90c45a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GH_Stargazers.StargazerViewModel.fetchStargazers(for: Swift.String) -&gt; ()"
-                  moduleName = "GH Stargazers"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "1937">
-               </Location>
-               <Location
-                  uuid = "EF252D63-13B8-4A62-AE8E-F7F353225E52 - cca9e96cdbbf969b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_Stargazers.StargazerViewModel.fetchStargazers(for: Swift.String) -&gt; ()"
-                  moduleName = "GH Stargazers"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "413">
-               </Location>
-               <Location
-                  uuid = "EF252D63-13B8-4A62-AE8E-F7F353225E52 - 3120664a929a756a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GH_StargazersTests.StargazerViewModel.fetchStargazers(for: Swift.String) -&gt; ()"
-                  moduleName = "GH StargazersTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "807">
-               </Location>
-               <Location
-                  uuid = "EF252D63-13B8-4A62-AE8E-F7F353225E52 - 3120664a929a756a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GH_StargazersTests.StargazerViewModel.fetchStargazers(for: Swift.String) -&gt; ()"
-                  moduleName = "GH StargazersTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "1937">
-               </Location>
-               <Location
-                  uuid = "EF252D63-13B8-4A62-AE8E-F7F353225E52 - e5aca248fb3237f3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_StargazersTests.StargazerViewModel.fetchStargazers(for: Swift.String) -&gt; ()"
-                  moduleName = "GH StargazersTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "413">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "037E3B80-80CC-4881-AEBE-8ED9932AA8AE"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GH Stargazers/ViewModels/StargazerViewModel.swift"
@@ -400,34 +100,34 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "037E3B80-80CC-4881-AEBE-8ED9932AA8AE - cca9e96cdbbf9580"
+                  uuid = "EB93146E-7AE3-4BB5-ABC6-9C7AA70F51ED - fdb2e8fe6783f13a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_Stargazers.StargazerViewModel.fetchStargazers(for: Swift.String) -&gt; ()"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_Stargazers.StargazerViewModel.fetchStargazers(for: Swift.String, debugString: Swift.String) -&gt; ()"
                   moduleName = "GH Stargazers"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "3274">
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "5103">
                </Location>
                <Location
-                  uuid = "037E3B80-80CC-4881-AEBE-8ED9932AA8AE - e5aca248fb3234e8"
+                  uuid = "EB93146E-7AE3-4BB5-ABC6-9C7AA70F51ED - 8687faf628b85d42"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_StargazersTests.StargazerViewModel.fetchStargazers(for: Swift.String) -&gt; ()"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_StargazersTests.StargazerViewModel.fetchStargazers(for: Swift.String, debugString: Swift.String) -&gt; ()"
                   moduleName = "GH StargazersTests"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "3274">
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "5103">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -435,17 +135,358 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5180291C-D8D2-47C6-8795-89316DB290F7"
+            uuid = "037E3B80-80CC-4881-AEBE-8ED9932AA8AE"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GH StargazersTests/GH_StargazersViewModelTests.swift"
+            filePath = "GH Stargazers/ViewModels/StargazerViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
-            landmarkName = "testPaginationData()"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "fetchStargazers(for:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "037E3B80-80CC-4881-AEBE-8ED9932AA8AE - fdb2e8fe6783f159"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_Stargazers.StargazerViewModel.fetchStargazers(for: Swift.String, debugString: Swift.String) -&gt; ()"
+                  moduleName = "GH Stargazers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "5166">
+               </Location>
+               <Location
+                  uuid = "037E3B80-80CC-4881-AEBE-8ED9932AA8AE - 8687faf628b85d21"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_StargazersTests.StargazerViewModel.fetchStargazers(for: Swift.String, debugString: Swift.String) -&gt; ()"
+                  moduleName = "GH StargazersTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "5166">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1AF07494-6FA1-4BC2-919E-8AE12A48DEBA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GH Stargazers/ViewModels/StargazerViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "fetchStargazers(for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1AF07494-6FA1-4BC2-919E-8AE12A48DEBA - fdb2e8fe6783f6be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_Stargazers.StargazerViewModel.fetchStargazers(for: Swift.String, debugString: Swift.String) -&gt; ()"
+                  moduleName = "GH Stargazers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "3896">
+               </Location>
+               <Location
+                  uuid = "1AF07494-6FA1-4BC2-919E-8AE12A48DEBA - 8687faf628b85ac6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_StargazersTests.StargazerViewModel.fetchStargazers(for: Swift.String, debugString: Swift.String) -&gt; ()"
+                  moduleName = "GH StargazersTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "3896">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1461FEA4-7C9F-438A-BB46-5A7980F92AA4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GH Stargazers/ViewModels/StargazerViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "fetchStargazers(for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1461FEA4-7C9F-438A-BB46-5A7980F92AA4 - fdb2e8fe6783f7d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_Stargazers.StargazerViewModel.fetchStargazers(for: Swift.String, debugString: Swift.String) -&gt; ()"
+                  moduleName = "GH Stargazers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "2393">
+               </Location>
+               <Location
+                  uuid = "1461FEA4-7C9F-438A-BB46-5A7980F92AA4 - 8687faf628b85bad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_StargazersTests.StargazerViewModel.fetchStargazers(for: Swift.String, debugString: Swift.String) -&gt; ()"
+                  moduleName = "GH StargazersTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "2393">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F2CD6E30-B1C2-4FC4-BC90-80558B79117E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GH Stargazers/ViewModels/StargazerViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "fetchStargazers(for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F2CD6E30-B1C2-4FC4-BC90-80558B79117E - fdb2e8fe6783f632"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_Stargazers.StargazerViewModel.fetchStargazers(for: Swift.String, debugString: Swift.String) -&gt; ()"
+                  moduleName = "GH Stargazers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "3137">
+               </Location>
+               <Location
+                  uuid = "F2CD6E30-B1C2-4FC4-BC90-80558B79117E - 8687faf628b85a4a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_StargazersTests.StargazerViewModel.fetchStargazers(for: Swift.String, debugString: Swift.String) -&gt; ()"
+                  moduleName = "GH StargazersTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "3137">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3249DBA2-F706-40B4-AA86-9B3A6EFF1443"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "Yes"
+            filePath = "GH Stargazers/ViewModels/StargazerViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "fetchStargazers(for:)"
+            landmarkType = "7">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.Log">
+                  <ActionContent
+                     message = "@print(requestURL)@"
+                     conveyanceType = "0">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
+            <Locations>
+               <Location
+                  uuid = "3249DBA2-F706-40B4-AA86-9B3A6EFF1443 - d85a004683bf941a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GH_Stargazers.StargazerViewModel.fetchStargazers(for: Swift.String, debugString: Swift.String) -&gt; ()"
+                  moduleName = "GH Stargazers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "1984">
+               </Location>
+               <Location
+                  uuid = "3249DBA2-F706-40B4-AA86-9B3A6EFF1443 - d85a004683bf941a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GH_Stargazers.StargazerViewModel.fetchStargazers(for: Swift.String, debugString: Swift.String) -&gt; ()"
+                  moduleName = "GH Stargazers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "2562">
+               </Location>
+               <Location
+                  uuid = "3249DBA2-F706-40B4-AA86-9B3A6EFF1443 - fdb2e8fe6783f5c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_Stargazers.StargazerViewModel.fetchStargazers(for: Swift.String, debugString: Swift.String) -&gt; ()"
+                  moduleName = "GH Stargazers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "489">
+               </Location>
+               <Location
+                  uuid = "3249DBA2-F706-40B4-AA86-9B3A6EFF1443 - ef6b56f17ddb6ba9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GH_StargazersTests.StargazerViewModel.fetchStargazers(for: Swift.String, debugString: Swift.String) -&gt; ()"
+                  moduleName = "GH StargazersTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "1984">
+               </Location>
+               <Location
+                  uuid = "3249DBA2-F706-40B4-AA86-9B3A6EFF1443 - ef6b56f17ddb6ba9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GH_StargazersTests.StargazerViewModel.fetchStargazers(for: Swift.String, debugString: Swift.String) -&gt; ()"
+                  moduleName = "GH StargazersTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "2562">
+               </Location>
+               <Location
+                  uuid = "3249DBA2-F706-40B4-AA86-9B3A6EFF1443 - 8687faf628b859bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_StargazersTests.StargazerViewModel.fetchStargazers(for: Swift.String, debugString: Swift.String) -&gt; ()"
+                  moduleName = "GH StargazersTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "489">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "75D9ECDB-7208-4625-9664-5208AE05FC83"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GH Stargazers/ViewModels/StargazerViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "fetchStargazers(for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "75D9ECDB-7208-4625-9664-5208AE05FC83 - fdb2e8fe6783f748"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_Stargazers.StargazerViewModel.fetchStargazers(for: Swift.String, debugString: Swift.String) -&gt; ()"
+                  moduleName = "GH Stargazers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "1760">
+               </Location>
+               <Location
+                  uuid = "75D9ECDB-7208-4625-9664-5208AE05FC83 - 8687faf628b85b30"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in GH_StargazersTests.StargazerViewModel.fetchStargazers(for: Swift.String, debugString: Swift.String) -&gt; ()"
+                  moduleName = "GH StargazersTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emanuel/Documents/GH%20Stargazers/GH%20Stargazers/ViewModels/StargazerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "1760">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

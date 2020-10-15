@@ -27,16 +27,13 @@ class StargazersVMDelegate: StargazerViewModelDelegate {
     
     func onCompletion() {
         onCompletionBlock()
-        expectation.fulfill()
     }
     
     func onError(errorMessage: String) {
         onErrorBlock(errorMessage)
-        expectation.fulfill()
     }
     
     func isLoadingMore(_ bool: Bool) {
         isLoadingMoreBlock(bool)
-        expectation.fulfill()
     }
 }
